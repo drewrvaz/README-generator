@@ -80,7 +80,11 @@ inquirer.prompt([
     name: "email",
   }
 ]).then((answers) => {
+  const readMeContent = generateReadMe(answers);
 
+  fs.writefile("newREADME.md", readMeContent, (err) =>
+    err ? console.log(err) : console.log("Successfully generated ReadMe")
+  ); 
 })
 
 // TODO: Create a function to write README file
