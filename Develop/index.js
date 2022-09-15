@@ -79,28 +79,27 @@ inquirer.prompt([
     name: "email",
     message: "What is your email address?",
   }
-]).then((data) => {
-  // const readMeContent = generateReadMe(data);
-
-  writeToFile();
-
-  // fs.writeFile(`newREADME.md`, readMeContent, (err) =>
-  //   err ? console.log(err) : console.log("Successfully generated ReadMe.md")
-  // ); 
-})
-
-// TODO: Create a function to write README file
-function writeToFile(data) {
+])
+.then((data) => {
   const readMeContent = generateReadMe(data);
-  // const fileName = "newREADME.md";
 
-  fs.writeToFile(`newREADME.md`, readMeContent, (err) =>
+  fs.writeFile("newREADME.md", readMeContent, (err) =>
     err ? console.log(err) : console.log("Successfully generated ReadMe.md")
   ); 
-}
+});
 
-// TODO: Create a function to initialize app
-function init() {}
+// TODO: Create a function to write README file
+// function writeToFile(data) {
+//   const readMeContent = generateReadMe(data);
+//   // const fileName = "newREADME.md";
 
-// Function call to initialize app
-init();
+//   fs.writeToFile(`newREADME.md`, readMeContent, (err) =>
+//     err ? console.log(err) : console.log("Successfully generated ReadMe.md")
+//   ); 
+// }
+
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
