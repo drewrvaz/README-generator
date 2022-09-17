@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -29,8 +29,6 @@ ${tests}
 E-mail: ${email}
 GitHub: ${github}`;
 
-// TODO: Create an array of questions for user input
-// const questions = [];
 // Using inquirer prompts to generate quesitons for the user to input the necessary info for their README
 inquirer.prompt([
   {
@@ -80,7 +78,7 @@ inquirer.prompt([
     message: "What is your email address?",
   }
 ])
-.then((data) => {
+.then((data) => { // Function to generate the ReadMe for the user
   const readMeContent = generateReadMe(data);
 
   fs.writeFile("newREADME.md", readMeContent, (err) =>
@@ -88,18 +86,3 @@ inquirer.prompt([
   ); 
 });
 
-// TODO: Create a function to write README file
-// function writeToFile(data) {
-//   const readMeContent = generateReadMe(data);
-//   // const fileName = "newREADME.md";
-
-//   fs.writeToFile(`newREADME.md`, readMeContent, (err) =>
-//     err ? console.log(err) : console.log("Successfully generated ReadMe.md")
-//   ); 
-// }
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
