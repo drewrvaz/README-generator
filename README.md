@@ -18,3 +18,4 @@ In order to install the project, the user needs to have node.js downloaded on th
 ## Usage
 
 To use the ReadMe generator, the User jsut needs to run node.js in their console with the index.js file that I created. They can then answer the prompts and it will spit out their own custom ReadMe titled "newREADME.md".
+
