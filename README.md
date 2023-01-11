@@ -20,4 +20,4 @@ In order to install the project, the user needs to have node.js downloaded on th
 To use the ReadMe generator, the User jsut needs to run node.js in their console with the index.js file that I created. They can then answer the prompts and it will spit out their own custom ReadMe titled "newREADME.md".
 
 ## Demonstration
-file:///C:/Users/clued/Downloads/ReadMeDemonstration.webm
+[ReadMeDemonstration.webm](https://user-images.githubusercontent.com/108427880/211883834-3db076c8-93aa-42ee-8a8b-5b0d42b74a71.webm)
